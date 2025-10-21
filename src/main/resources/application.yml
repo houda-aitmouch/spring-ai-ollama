@@ -1,0 +1,16 @@
+spring:
+  ai:
+    ollama:
+      server:
+        port: 9292
+      model: "llama3"
+      base-url: "http://localhost:11434"
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: sa
+    password: ""
+  jpa:
+    hibernate:
+      ddl-auto: update
+    show-sql: true
